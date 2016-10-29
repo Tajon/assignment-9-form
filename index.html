@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Basic Bootstrap File</title>
+
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+
+<div class="container">
+  <div class="row">
+
+    <h1>Soccer Quiz</h1>
+
+      <p> Soccer is often called "The World Game" due to the populartiy across the globe. It is a sport that is known in countries all over for connects cultures. It is important to have a way to relate to the world around us, so try to test your knowledge on the game known all over as football. Below is a quiz that will address the basic components of socccer.</p>
+
+        <p> Get stuck? Find the information from the <a href="https://en.wikipedia.org/wiki/Association_football">source</a>.</p>
+
+<form>
+  <div class="form-group">
+    <label>
+      1. What is the name of the person who stops the goal from being scored on each team?
+    </label>
+      <input type="text" class="form-control" name="question" id="playerAnswer" placeholder="your answer here">
+  </div>
+
+  <div class="form-group">
+    <label>2. In what year did association football (soccer) begin?
+    </label>
+      <input type="text" class= "form-control" name="question"  id="yearAnswer" placeholder="your answer here">
+  </div>
+
+    <div class="form-group">
+      <label> 3. This type of player keeps posesssion from the opposition and passes it up the field to be scored.
+      </label>
+        <div class="radio">
+          <label>
+            <input name="player" type="radio" id="radioOne" value="a. goalkeeper">
+              a. goalkeeper
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input name="player" type="radio" id="radioTwo" value="b. forward">
+              b. forward
+            </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input name="player" type="radio" id="radioThree" value="c. midfielder">
+              c. midfielder
+            </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input name="player" type="radio" id="radioFour" value="d. defender">
+              d. defender
+          </label>
+        </div>
+      </div>
+
+        <div class="form-group">
+          <label>4. Select all of the following that are considered restart methods for when the ball is out of play.
+          </label>
+        </div>
+        <div class= "checkbox">
+          <label>
+            <input type="checkbox">
+              corner kick
+          </label>
+        </div>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" name="kick" id="checkboxOne" value="kick-out">
+              kick-out
+          </label>
+        </div>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" name="kick" id="checkboxTwo" value="penalty kick">
+              penalty kick
+          </label>
+        </div>
+        <div class= "checkbox">
+          <label>
+            <input type="checkbox" name="kick" id="checkboxThree" value="indirect free kick">
+            indirect free kick
+          </label>
+        </div>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" name="kick" id="checkboxFour" value="throw-up">
+              throw-up
+          </label>
+        </div>
+
+      <div class="form-group">
+        <label> 5. Which card given by a referee can lead to being removed from the game?
+        </label>
+          <select>
+            <option id="optionOne" value="select card">select card</option>
+            <option id="optionTwo" value="green card">green card</option>
+            <option id="optionThree" value="blue card">blue card</option>
+            <option id="optionFour" value="red card">red card</option>
+            <option id="optionFive" value="yellow card">yellow card</option>
+            <option id="optionSix" value="purple card">purple card</option>
+            <option id="optionSeven" value="black card">black card</option>
+            <option id="optionEight" value="white card">white card</option>
+            <option id="optionNine" value="pink card">pink card</option>
+            <option id="optionTen" value="rainbow card">pink card</option>
+          </select>
+      </div>
+
+          <div class="form-group">
+            <label for="inputExperience">6. Write about you favorite experience with soccer.
+            </label>
+              <textarea class="form-control" name="question" id="inputExperience" placeholder="Write experience here"
+              maxlength="500"></textarea>
+          </div>
+
+      <div class="form-group">
+        <button type="submit" name="button" class="btn btn-success" value="Submit Quiz">Submit Quiz
+        </button>
+        <button type="reset" name="button" class="btn btn-danger" value="Reset Quiz">Reset Quiz
+        </button>
+      </div>
+
+    </form>
+  </div>
+</div>
+
+      <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
